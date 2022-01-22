@@ -17,22 +17,23 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.list![widget.index]['item_name']),
-        ),
-        body: Container(
-          child: Card(
-            child: Center(
-              child: Column(
-                children: [
-                  //multiple widget
-                  Row(children: [
-                    //elevated button edit dan delete
-                  ]),
-                ],
-              ),
+      appBar: AppBar(
+        title: Text(widget.list![widget.index]['item_name']),
+      ),
+      body: Container(
+        child: Card(
+          child: Center(
+            child: Column(
+              children: [
+                //multiple widget
+                Row(children: [
+                  //elevated button edit dan delete
+                ]),
+              ],
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

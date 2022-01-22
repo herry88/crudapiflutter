@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:crudapi/addpage.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -35,7 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('HomePage'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => AddPage(),
+            ),
+          );
+        },
         child: Icon(
           Icons.add,
         ),
