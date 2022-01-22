@@ -8,6 +8,11 @@ class AddPage extends StatefulWidget {
 }
 
 class _AddPageState extends State<AddPage> {
+  //deklarasi variabel
+  TextEditingController itemCode = TextEditingController();
+  TextEditingController itemName = TextEditingController();
+  TextEditingController itemPrice = TextEditingController();
+  TextEditingController Stock = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,24 +25,28 @@ class _AddPageState extends State<AddPage> {
           Column(
             children: [
               TextField(
+                controller: itemCode,
                 decoration: InputDecoration(
                   hintText: 'Item Code',
                   labelText: 'Item Code',
                 ),
               ),
               TextField(
+                controller: itemName,
                 decoration: InputDecoration(
                   hintText: 'Item Name',
                   labelText: 'Item Name',
                 ),
               ),
               TextField(
+                controller: itemPrice,
                 decoration: InputDecoration(
                   hintText: 'Price',
                   labelText: 'Price',
                 ),
               ),
               TextField(
+                controller: Stock,
                 decoration: InputDecoration(
                   hintText: 'Stock',
                   labelText: 'Stock',
